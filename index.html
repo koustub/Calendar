@@ -7,27 +7,44 @@
     <title>Calendar</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">  
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <style>
-       
+            *{
+                font-family: 'Lato', sans-serif;
+            }
         .header{
             text-align: center;
             border-bottom: 10px solid black;
         }
+        .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                height: 100px;
+
+        }
         input{
-             width:700px;
-             height:30px;
-             margin-bottom: 5px;
+                width :1000px;
+                height:75px;
+                font-size: 25px;
         }
         button{
-                width :100px;
-                height:30px;
-                margin-bottom:5px;
+                margin:8px;
         }
        .container
        {
            margin: 30px;
        }
+       #forButton
+       {       
+               width: 50px;
+               height: 75px;
+               background-color: rgb(92, 168, 238);
+               
+       }
+
+
     </style>
 
 </head>
@@ -39,82 +56,84 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-4">9:00 AM</div>
+            <div class="col-4"><h2>9:00 AM</h2></div>
             <div class="col-6">
-                <input type="text" name="todo" id="firsthour">
+                <input type="text" name="todo-1" id="firsthour">
+            </div>
+            <div class="col-2" id="forButton" >
+                <button type="button" id="btn1"><i class="fas fa-lock fa-2x"></i></button>
             </div>
         </div>
-        <button type="button" id="button1">Button1</button>
         <div class="row">
-                <div class="col-4">10:00 AM</div>
+                <div class="col-4"><h2>10:00 AM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="secondhour">
                 </div>
-                <div class="col-2">
-                        <button id="button2">Button2</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn2"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">11:00 AM</div>
+                <div class="col-4"><h2>11:00 AM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="thirdhour">
                 </div>
-                <div class="col-2">
-                        <button id="button1">Button3</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn3"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">12:00 PM</div>
+                <div class="col-4"><h2>12:00 PM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="fourthhour">
                 </div>
-                <div class="col-2">
-                        <button id="button4">Button4</button>
+                <div class="col-2"id="forButton">
+                        <button type="button" id="btn4"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">1:00 PM</div>
+                <div class="col-4"><h2>1:00 PM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="fifthhour">
                 </div>
-                <div class="col-2">
-                        <button id="button5">Button5</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn5"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">2:00 PM</div>
+                <div class="col-4"><h2>2:00 PM</h2></div>
                 <div class="col-6 ">
                         <input type="text" name="todo" id="sixthhour">
                 </div>
-                <div class="col-2">
-                        <button id="button6">Button6</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn6"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">3:00 PM</div>
+                <div class="col-4"><h2>3:00 PM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="seventhhour">
                 </div>
-                <div class="col-2">
-                        <button id="button7">Button7</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn7"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">4:00 PM</div>
+                <div class="col-4"><h2>4:00 PM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="eighthhour">
                 </div>
-                <div class="col-2">
-                        <button id="button8">Button8</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn8"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
         <div class="row">
-                <div class="col-4">5:00 PM</div>
+                <div class="col-4"><h2>5:00 PM</h2></div>
                 <div class="col-6">
                         <input type="text" name="todo" id="ninthhour">
                 </div>
-                <div class="col-2">
-                        <button id="button9">Button9</button>
+                <div class="col-2" id="forButton">
+                        <button type="button" id="btn9"><i class="fas fa-lock fa-2x"></i></button>
                 </div>
         </div>
     </div> 
