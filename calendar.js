@@ -72,74 +72,127 @@ buttonOnePressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = fh.value;
      valueId = 'button1';
-    
+    if (localStorage.getItem('todolist') !== null){
+    todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[0]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[0]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonSecondPressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = sh.value;
      valueId = 'button2';
+     if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[1]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonThirdPressed.addEventListener('click',function(){
     console.log('button is pressed');
     todo = th.value;
     valueId = 'button3';
+    if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[2]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonFourthPressed.addEventListener('click',function(){
     console.log('button is pressed');
     todo = frh.value;
     valueId = 'button4';
+    if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[3]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonFifthPressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = fih.value;
      valueId = 'button5';
+     if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[4]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonSixthPressed.addEventListener('click',function(){
     console.log('button is pressed');
     todo = sih.value;
     valueId = 'button6';
+    if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[5]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonSeventhPressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = svh.value;
      valueId = 'button7';
+     if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[6]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonEigthPressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = eh.value;
      valueId = 'button8';
+     if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[7]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 buttonNinthPressed.addEventListener('click',function(){
     console.log('button is pressed');
      todo = nh.value;
      valueId = 'button9';
+     if ((localStorage.getItem('todolist') !== null)){
+        todolist = JSON.parse(localStorage.getItem('todolist'));
     todolist.push({valueId,todo});
-    console.log(`${todolist[8]}`);
     localStorage.setItem('todolist',JSON.stringify(todolist));
+    console.log(`${todolist[1]}`);}
+    else{
+    todolist.push({valueId,todo});
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+    }
 });
 UbuttonOnePressed.addEventListener('click', function () {
     console.log('button is pressed');
